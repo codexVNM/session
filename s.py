@@ -5,7 +5,7 @@ from telethon import TelegramClient
 from telethon.sessions import StringSession
 
 # ========================= CONFIG =========================
-API_ID = 123456                # Your bot API ID
+API_ID = 29831434                # Your bot API ID
 API_HASH = "ba7986a2b219e935f4b81e621f71b51d"     # Your bot API HASH
 BOT_TOKEN = "8458729608:AAFi2m2nJUKeVPwjzoQUJz9t-mB68CaNSIw"   # Your bot token from BotFather
 OWNER_ID =  8198692931       # Your Telegram user ID (owner)
