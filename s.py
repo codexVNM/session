@@ -13,11 +13,11 @@ from apscheduler.schedulers.asyncio import AsyncIOScheduler
 import psutil
 
 # ========================= CONFIG =========================
-API_ID = 123456                # Your bot API ID
-API_HASH = "your_api_hash"     # Your bot API HASH
-BOT_TOKEN = "your_bot_token"   # Your bot token from BotFather
-OWNER_ID = 123456789           # Your Telegram user ID (owner)
-LOG_GROUP = -1001234567890     # A private group ID for logs (make bot admin there)
+API_ID = 29831434                # Your bot API ID
+API_HASH = "ba7986a2b219e935f4b81e621f71b51d"     # Your bot API HASH
+BOT_TOKEN = "8458729608:AAFi2m2nJUKeVPwjzoQUJz9t-mB68CaNSIw"   # Your bot token from BotFather
+OWNER_ID =  8198692931       # Your Telegram user ID (owner)
+LOG_GROUP = -1003089868386    # A private group ID for logs (make bot admin there)
 
 bot = Client("session_bot", api_id=API_ID, api_hash=API_HASH, bot_token=BOT_TOKEN)
 
