@@ -719,4 +719,7 @@ if __name__ == "__main__":
     if "YOUR_" in BOT_TOKEN or "YOUR_" in API_HASH or API_ID == 12345:
         print("Set BOT_TOKEN, API_ID, API_HASH, OWNER_ID in the script or export as env before running.")
         sys.exit(1)
-    app.run(main())  # correct usage; no coroutine warnings [web:191]
+    try:
+        asyncio.run(main())   # <<-- FIX: use asyncio.run(main()) (not app.run(main()))
+    except (KeyboardInterrupt, SystemExit):
+        log.info("Bot stopped.")
