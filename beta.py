@@ -716,10 +716,4 @@ async def main():
         await idle()  # [web:191]
 
 if __name__ == "__main__":
-    if "YOUR_" in BOT_TOKEN or "YOUR_" in API_HASH or API_ID == 12345:
-        print("Set BOT_TOKEN, API_ID, API_HASH, OWNER_ID in the script or export as env before running.")
-        sys.exit(1)
-    # ---- FIXED ENTRYPOINT: let Pyrogram manage the loop and run your main() coroutine ----
-    # Passing the coroutine function to app.run ensures the client starts, your main() runs on the same loop,
-    # then Pyrogram idles — avoiding "attached to a different loop" RuntimeError.
-    app.run(main=main)
+    app.run()
